@@ -19,7 +19,7 @@ const About = () => {
 
       <div className="glass" style={{ padding: '3rem', textAlign: 'center', maxWidth: '800px', margin: '0 auto' }}>
         <Target size={48} color="#10b981" style={{ margin: '0 auto 1.5rem' }} />
-        <h3 style={{ fontSize: '1.75rem', marginBottom: '1.5rem', color: 'white' }}>{t.about.goal}</h3>
+        <h3 style={{ fontSize: '1.75rem', marginBottom: '1.5rem', color: 'var(--text-main)' }}>{t.about.goal}</h3>
         <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: '1.8' }}>
           {t.about.desc}
         </p>

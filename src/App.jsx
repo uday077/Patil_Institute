@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
+import { ThemeProvider } from './context/ThemeContext';
 import { LanguageProvider, useLanguage } from './context/LanguageContext';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -48,9 +49,11 @@ function AppContent() {
 function App() {
   return (
     <HelmetProvider>
-      <LanguageProvider>
-        <AppContent />
-      </LanguageProvider>
+      <ThemeProvider>
+        <LanguageProvider>
+          <AppContent />
+        </LanguageProvider>
+      </ThemeProvider>
     </HelmetProvider>
   );
 }

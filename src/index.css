@@ -13,6 +13,19 @@
   --success: #059669;
 }
 
+[data-theme='dark'] {
+  --bg-dark: #0f172a;
+  --bg-card: rgba(30, 41, 59, 0.7);
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --primary: #3b82f6;
+  --primary-hover: #2563eb;
+  --accent: #8b5cf6;
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  --success: #10b981;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -92,7 +105,7 @@ h2 {
 }
 
 .btn-outline {
-  background: white;
+  background: transparent;
   color: var(--primary);
   border: 2px solid var(--primary);
 }
@@ -139,7 +152,7 @@ section {
 }
 
 .navbar.scrolled {
-  background: rgba(255, 255, 255, 0.9);
+  background: var(--bg-card);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--glass-border);
 }
@@ -179,7 +192,7 @@ section {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: white;
+  background: var(--bg-card);
   padding: 0.5rem 1rem;
   border-radius: 9999px;
   cursor: pointer;
@@ -191,7 +204,24 @@ section {
 }
 
 .lang-switch:hover {
-  background: #f1f5f9;
+  background: var(--glass-border);
+}
+
+.theme-switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-card);
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid var(--glass-border);
+  color: var(--text-main);
+  transition: all 0.3s ease;
+}
+
+.theme-switch:hover {
+  background: var(--glass-border);
 }
 
 .mobile-menu-btn {
@@ -396,7 +426,7 @@ footer {
     right: -100%;
     height: 100vh;
     width: 250px;
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--bg-card);
     backdrop-filter: blur(10px);
     flex-direction: column;
     padding-top: 5rem;

@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
-import { Menu, X, Languages } from 'lucide-react';
+import { useTheme } from '../context/ThemeContext';
+import { Menu, X, Languages, Moon, Sun } from 'lucide-react';
 
 const Navbar = () => {
   const { lang, toggleLanguage, t } = useLanguage();
+  const { theme, toggleTheme } = useTheme();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -38,16 +40,21 @@ const Navbar = () => {
               key={link.name} 
               to={link.path} 
               className={({ isActive }) => `nav-link ${isActive ? 'active-link' : ''}`}
-              style={({ isActive }) => ({ color: isActive ? 'white' : 'var(--text-muted)' })}
+              style={({ isActive }) => ({ color: isActive ? 'var(--primary)' : 'var(--text-muted)' })}
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {link.name}
             </NavLink>
           ))}
-          <button onClick={toggleLanguage} className="lang-switch">
-            <Languages size={18} />
-            {lang === 'en' ? 'मराठी' : 'English'}
-          </button>
+          <div className="nav-controls" style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+            <button onClick={toggleTheme} className="theme-switch" aria-label="Toggle Theme">
+              {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
+            </button>
+            <button onClick={toggleLanguage} className="lang-switch">
+              <Languages size={20} />
+              {lang === 'en' ? 'मराठी' : 'English'}
+            </button>
+          </div>
         </div>
 
         <button 

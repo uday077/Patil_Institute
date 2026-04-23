@@ -71,19 +71,19 @@ const Hero = () => {
           {/* The Flow Diagram */}
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '2rem', position: 'relative' }}>
             
-            <div className="glass" style={{ background: 'white', padding: '2rem', textAlign: 'center', width: '250px', zIndex: 1, borderTop: '4px solid #3b82f6' }}>
+            <div className="glass" style={{ background: 'var(--bg-card)', padding: '2rem', textAlign: 'center', width: '250px', zIndex: 1, borderTop: '4px solid #3b82f6' }}>
               <BookOpen size={40} color="#3b82f6" style={{ margin: '0 auto 1rem' }} />
               <h3 style={{ color: 'var(--text-main)', marginBottom: '0.5rem' }}>1. {diagramText.step1}</h3>
               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>{diagramText.step1Desc}</p>
             </div>
 
-            <div className="glass" style={{ background: 'white', padding: '2rem', textAlign: 'center', width: '250px', zIndex: 1, borderTop: '4px solid #8b5cf6' }}>
+            <div className="glass" style={{ background: 'var(--bg-card)', padding: '2rem', textAlign: 'center', width: '250px', zIndex: 1, borderTop: '4px solid #8b5cf6' }}>
               <Presentation size={40} color="#8b5cf6" style={{ margin: '0 auto 1rem' }} />
               <h3 style={{ color: 'var(--text-main)', marginBottom: '0.5rem' }}>2. {diagramText.step2}</h3>
               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>{diagramText.step2Desc}</p>
             </div>
 
-            <div className="glass" style={{ background: 'white', padding: '2rem', textAlign: 'center', width: '250px', zIndex: 1, borderTop: '4px solid #10b981' }}>
+            <div className="glass" style={{ background: 'var(--bg-card)', padding: '2rem', textAlign: 'center', width: '250px', zIndex: 1, borderTop: '4px solid #10b981' }}>
               <CheckCircle size={40} color="#10b981" style={{ margin: '0 auto 1rem' }} />
               <h3 style={{ color: 'var(--text-main)', marginBottom: '0.5rem' }}>3. {diagramText.step3}</h3>
               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>{diagramText.step3Desc}</p>
@@ -123,7 +123,7 @@ const Hero = () => {
             
             {/* Founder Image */}
             <div style={{ textAlign: 'center', flex: '1 1 250px', maxWidth: '300px' }}>
-              <div style={{ width: '250px', height: '250px', margin: '0 auto', borderRadius: '24px', overflow: 'hidden', border: '4px solid white', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}>
+              <div style={{ width: '250px', height: '250px', margin: '0 auto', borderRadius: '24px', overflow: 'hidden', border: '4px solid var(--bg-card)', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}>
                 {/* We use founder.jpg from the public folder */}
                 <img src="/founder.jpg" alt="Uday Patil" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
