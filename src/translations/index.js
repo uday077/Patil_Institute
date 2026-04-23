@@ -133,21 +133,25 @@ export const translations = {
       ],
     },
     interview: {
-      title: "Mock Interviews & Practice",
-      desc: "Prepare for your real interviews with our mock rounds.",
-      ai: {
-        title: "AI Interview",
-        desc: "Practice with AI-driven questions to build confidence.",
-      },
-      hr: {
-        title: "HR Round",
-        desc: "Learn to answer behavioral questions, strengths, and weaknesses.",
-      },
-      tech: {
-        title: "Technical Round",
-        desc: "Solve coding problems and explain your logic.",
-      },
-      practiceBtn: "Start Practice",
+      title: "Our Signature Mock Interview Program",
+      desc: "We provide a comprehensive, 3-stage mock interview program designed specifically to eliminate fear and build extreme confidence in village students.",
+      rounds: {
+        ai: {
+          title: "Stage 1: AI Virtual Screening",
+          desc: "Before facing real humans, you will practice with our advanced AI tools. This stage helps you overcome camera shyness, improve basic communication, and get comfortable with digital interview setups. The AI provides instant feedback on your tone and confidence.",
+          img: "/mock_ai.png"
+        },
+        hr: {
+          title: "Stage 2: Expert HR Round",
+          desc: "In this stage, you will sit one-on-one with experienced HR professionals. You will learn how to introduce yourself powerfully, answer tricky behavioral questions, explain career gaps, and master salary negotiations. We teach you exactly what recruiters want to hear.",
+          img: "/mock_hr.png"
+        },
+        tech: {
+          title: "Stage 3: Deep Technical Round",
+          desc: "The final and most crucial stage. We conduct profile-specific technical rounds (e.g., Frontend, Backend, Testing). You will be given real-world coding problems and scenario-based questions to solve live, exactly how top IT companies conduct their interviews.",
+          img: "/mock_tech.png"
+        }
+      }
     },
     about: {
       title: "About Patil Institute",
@@ -297,21 +301,25 @@ export const translations = {
       ],
     },
     interview: {
-      title: "मॉक इंटरव्ह्यू आणि सराव",
-      desc: "आमच्या मॉक फेऱ्यांद्वारे तुमच्या खऱ्या इंटरव्ह्यूची तयारी करा.",
-      ai: {
-        title: "एआय इंटरव्ह्यू",
-        desc: "आत्मविश्वास वाढवण्यासाठी एआय-आधारित प्रश्नांसह सराव करा.",
-      },
-      hr: {
-        title: "एचआर फेरी",
-        desc: "वर्तणुकीशी संबंधित प्रश्न, ताकद आणि कमकुवतपणा यांची उत्तरे कशी द्यायची ते शिका.",
-      },
-      tech: {
-        title: "तांत्रिक फेरी",
-        desc: "कोडिंग समस्या सोडवा आणि तुमचे लॉजिक स्पष्ट करा.",
-      },
-      practiceBtn: "सराव सुरू करा",
+      title: "आमचा विशेष मॉक इंटरव्ह्यू प्रोग्राम",
+      desc: "आम्ही एक सर्वसमावेशक, ३-टप्प्यांचा मॉक इंटरव्ह्यू प्रोग्राम प्रदान करतो जो विशेषतः ग्रामीण विद्यार्थ्यांची भीती दूर करण्यासाठी आणि आत्मविश्वास वाढवण्यासाठी डिझाइन केलेला आहे.",
+      rounds: {
+        ai: {
+          title: "टप्पा १: AI व्हर्च्युअल स्क्रीनिंग",
+          desc: "खऱ्या माणसांना सामोरे जाण्यापूर्वी, तुम्ही आमच्या प्रगत AI टूल्ससह सराव कराल. हा टप्पा तुम्हाला कॅमेऱ्याची भीती दूर करण्यास, मूलभूत संवाद सुधारण्यास आणि डिजिटल इंटरव्ह्यूसाठी तयार होण्यास मदत करतो. AI तुमच्या आत्मविश्वासावर त्वरित अभिप्राय देते.",
+          img: "/mock_ai.png"
+        },
+        hr: {
+          title: "टप्पा २: तज्ञ HR राउंड",
+          desc: "या टप्प्यात, तुम्ही अनुभवी HR व्यावसायिकांसोबत वन-टू-वन सराव कराल. स्वतःची प्रभावी ओळख कशी करून द्यावी, कठीण वागणुकीच्या प्रश्नांची उत्तरे कशी द्यावीत आणि पगार निगोशिएशन कसे करावे हे तुम्ही शिकाल. रिक्रुटर्सना नक्की काय ऐकायचे आहे ते आम्ही तुम्हाला शिकवतो.",
+          img: "/mock_hr.png"
+        },
+        tech: {
+          title: "टप्पा ३: सखोल तांत्रिक राउंड",
+          desc: "अंतिम आणि सर्वात महत्त्वाचा टप्पा. आम्ही प्रोफाईल-विशिष्ट तांत्रिक राऊंड घेतो (उदा. फ्रंटएंड, बॅकएंड, टेस्टिंग). तुम्हाला सोडवण्यासाठी वास्तविक कोडिंग समस्या आणि परिस्थिती-आधारित प्रश्न दिले जातील, अगदी टॉप आयटी कंपन्या जसे इंटरव्ह्यू घेतात तसे.",
+          img: "/mock_tech.png"
+        }
+      }
     },
     about: {
       title: "पाटील इन्स्टिट्यूट बद्दल",
